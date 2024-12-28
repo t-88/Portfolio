@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 
@@ -8,18 +8,29 @@ import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 
-import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+import Popup from "./components/popup/popup";
+import GlobalContext, { globalData as GD } from "./state/global-context";
+
+
 
 function App() {
+	const [globalData,setGlobalData] = useState(GD);
+
 	useEffect(() => {
-		if (TRACKING_ID !== "") {
-			ReactGA.initialize(TRACKING_ID);
+		if(globalData.showPopup) {
+			document.querySelector("html").classList.add("overflow-hidden");
+		} else {
+			document.querySelector("html").classList.remove("overflow-hidden");
 		}
-	}, []);
+	},[globalData.showPopup]);
 
 	return (
+	<GlobalContext.Provider value={{globalData,setGlobalData}}>
+
 		<div className="App">
+			<Popup />
+
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
@@ -28,6 +39,8 @@ function App() {
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
+	</GlobalContext.Provider>
+
 	);
 }
 

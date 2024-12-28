@@ -127,9 +127,9 @@ function Events() {
 		<div className="events">
 			{
 				EVENTS.map((event) => {
-					return <section className={`event-item   ${event.dir == "left" ? "event-item-rev" : ""}`} >
-						<div className="flex">
-							<h1>{event.title}</h1>
+					return <section key={event.title} className={`event-item   ${event.dir == "left" ? "event-item-rev" : ""}`} >
+						<div className="flex flex-col gap-4">
+							<h1 className="text-2xl font-bold">{event.title}</h1>
 							<p>{event.desc}</p>
 						</div>
 						<img src={event.src} alt="" />

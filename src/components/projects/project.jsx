@@ -1,32 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/project.css";
+import GlobalContext, { globalData } from "../../state/global-context";
 
-const Project = (props) => {
-	const { logo, title, description, linkText, link } = props;
+const Project = ({project}) => {
+	const gCtx = useContext(GlobalContext);
 
+	function onClickProject() {
+
+			gCtx.setGlobalData({...gCtx.globalData,popupData : project,  showPopup : true});
+	}
 	return (
 		<React.Fragment>
 			<div className="project">
-				<Link to={link}>
+				<div className="cursor-pointer" onClick={onClickProject}>
 					<div className="project-container">
 						<div className="project-logo">
-							<img src={logo} alt="logo" />
+							<img className="rounded-sm" src={project.logo} alt="logo" />
 						</div>
-						<div className="project-title">{title}</div>
-						<div className="project-description">{description}</div>
+						<div className="project-title">{project.title}</div>
+						<div className="project-description">{project.description}</div>
 						<div className="project-link">
 							<div className="project-link-icon">
 								<FontAwesomeIcon icon={faLink} />
 							</div>
 
-							<div className="project-link-text">{linkText}</div>
+							<div className="project-link-text">To Project</div>
 						</div>
 					</div>
-				</Link>
+				</div>
 			</div>
 		</React.Fragment>
 	);

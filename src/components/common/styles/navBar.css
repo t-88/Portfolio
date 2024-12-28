@@ -31,10 +31,15 @@
 	justify-content: space-between;
 	list-style: none;
 	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
+	margin: 0 16px;
 	margin-top: 11px;
+
 }
+.nav-list li {
+	align-self: center;
+	text-align: center;
+}
+
 
 .nav-item {
 	font-weight: bold;
@@ -61,6 +66,7 @@
 		margin-right: 25%;
 		width: 80%;
 		font-size: 80%;
+		gap: 10px;
 	}
 
 	.nav-background {
@@ -69,6 +75,15 @@
 	}
 
 	.nav-item {
+		margin-left:0 ;
+		margin-right:0 ;
 		font-weight: bold;
+		width: 100%;
+		align-self: center;
+		justify-content: space-around;
 	}
+	.nav-list li { 
+		text-align:center;
+	}
+
 }

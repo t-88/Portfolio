@@ -22,45 +22,92 @@ const INFO = {
 	projects: [
 		{
 			title: "ONews",
-			description:
-				"An easy-to-use mobile app that gathers all Algerian news in one place, keeping you updated effortlessly.",
 			logo: "../projects/onew.png",
-			linkText: "View Project",
+			description: "An easy-to-use mobile app that gathers all Algerian news in one place, keeping you updated effortlessly.",
 			link: "https://github.com/TheOpenNews/ONews",
+			previewImgs: [],
+			feats: [],
+			previewImgs: [],
+			type: "mobile",
 		},
 		{
 			title: "GuiDNI",
 			description: "Winner of the Coscape Hackathon Event\nGuiDNI is a mobile app that connects the Algerian community with startups, offering rewards for feedback and participation through daily surveys.",
 			logo: "../projects/GuiDNI.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			previewImgs: [],
+			feats: [
+				"Startup-focused platform",
+				"Audience data collection tools",
+				"Flexible and customizable survey system",
+				"Startup management features",
+			],
+			previewImgs: [
+				"https://raw.githubusercontent.com/t-88/coscape-hackthone/main/screenshots/1.png",
+				"https://raw.githubusercontent.com/t-88/coscape-hackthone/main/screenshots/2.png",
+				"https://raw.githubusercontent.com/t-88/coscape-hackthone/main/screenshots/5.png",
+				"https://raw.githubusercontent.com/t-88/coscape-hackthone/main/screenshots/7.png",
+			],
+			type: "mobile",
 		},
 
 		{
 			title: "LibTrack",
 			description:
 				"A desktop app for managing library bookings and users, designed to simplify the process of tracking books and maintaining organization in my local library.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com/t-88/i9ama-libmgr",
+			logo: "../projects/LibTrack.png",
+			link: "https://github.com/t-88/epic-editor",
+			feats: [
+				"Library resource management.",
+				"Notification system for due dates and new arrivals.",
+				"Member account creation and management.",
+				"Islamic-themed user interface design.",
+			],
+			previewImgs: [
+				"https://github.com/t-88/i9ama-libmgr/raw/master/preview/usecase.gif",
+				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/1.png",
+				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/2.png",
+				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/3.png",
+
+			],
 		},
 
 		{
 			title: "Connectify",
 			description:
 				"A clean and simple frontend for a messaging app, focused on delivering a smooth user experience.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			logo: "../projects/Connectify.png",
+			link: "https://github.com/t-88/flutter-connectify-massaging-app-frontend",
+			feats: [
+				"Clean and simple frontend design.",
+				"Optimized for a smooth user experience.",
+				"Tailored for a messaging app interface.",
+			],
+			previewImgs: [
+				"https://raw.githubusercontent.com/t-88/flutter-connectify-massaging-app-frontend/master/screenshots/2.jpg",
+				"https://raw.githubusercontent.com/t-88/flutter-connectify-massaging-app-frontend/master/screenshots/4.jpg",
+				"https://raw.githubusercontent.com/t-88/flutter-connectify-massaging-app-frontend/master/screenshots/5.jpg",
+			],
+			type: "mobile",
 		},
 
 	
 		{
-			title: "Epic Editor",
+			title: "EpicEditor",
 			description: "An online game engine that transforms games into cross-platform desktop applications, serving as a foundation for future app development tools. ",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			logo: "../projects/EpicEditor.png",
+			link: "https://github.com/t-88/epic-editor",
+			feats: [
+				"Online game engine.",
+				"Transforms games into cross-platform desktop applications.",
+				"Foundation for future app development tools.",
+			],
+			previewImgs: [
+				"https://raw.githubusercontent.com/t-88/epic-editor/master/preview/pong_game.gif",
+				"https://raw.githubusercontent.com/t-88/epic-editor/master/preview/epic-editor.png",
+				"https://raw.githubusercontent.com/t-88/epic-editor/master/preview/code-editor.png",
+			],
+			
 		},
 	],
 };
