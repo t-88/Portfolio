@@ -3,6 +3,7 @@ import "./popup.css";
 import { Carousel } from "flowbite-react";
 import GlobalContext, { globalData } from "../../state/global-context";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Popup() {
 
@@ -29,11 +30,22 @@ export default function Popup() {
                     })
                 }
             </ul>
-            <Link to={gCtx.globalData.popupData.link}>View Project</Link>
-            <Carousel slide={false} className="carousel flex items-center justify-center self-center" style={{width: gCtx.globalData.popupData.type == "mobile" ? "300px" : ""}} theme={theme} >
+            <Link className="self-end underline text-blue-500 font-meduim hover:font-bold text-sm" rel="noopener noreferrer"  target="_blank" to={gCtx.globalData.popupData.link}>View Project</Link>
+            <Carousel draggable={false}  slide={false} className="carousel flex items-center justify-center self-center" style={{ width: gCtx.globalData.popupData.type == "mobile" ? "300px" : "" }} theme={theme} >
                 {
                     gCtx.globalData.popupData.previewImgs.map(img => {
-                        return <img style={{width: gCtx.globalData.popupData.type == "mobile" ?  145 : ""}} src={img} alt="..." />
+                        if(img.endsWith("mp4")) {
+                            return <video className="py-8" autoPlay="true" key={img} src={img}></video>
+                        }
+                        return <LazyLoadImage
+                        key={img}
+                            width={gCtx.globalData.popupData.type == "mobile" ? "145px" : ""}
+                            style={{ width: gCtx.globalData.popupData.type == "mobile" ? "145px" : "" }}
+                            src={img}
+                            alt="..."
+                            loading="lazy"
+                            placeholder= {<h1>LOADING</h1>}
+                        />
                     })
                 }
             </Carousel>

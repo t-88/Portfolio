@@ -47,6 +47,7 @@ const About = () => {
 						<br />
 						<TechStack />
 						<br />
+						<br />
 						<Events />
 					</div>
 					<div className="page-footer">
@@ -87,7 +88,8 @@ function TechStack() {
 
 	}
 	return <>
-		<h1>Teck Stack</h1>
+		<h1 className="font-bold text-2xl">Teck Stack</h1>
+		<br />
 		<div className="tech-stack">
 			<section className="stack-container">
 				{
@@ -123,7 +125,7 @@ function Events() {
 		}	,
 	]
 	return <>
-		<h1>Events</h1>
+		<h1 className="font-bold text-2xl">Events</h1>
 		<div className="events">
 			{
 				EVENTS.map((event) => {

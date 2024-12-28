@@ -6,12 +6,11 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
 import GlobalContext, { globalData } from "../../state/global-context";
 
-const Project = ({project}) => {
+const Project = ({ project }) => {
 	const gCtx = useContext(GlobalContext);
 
 	function onClickProject() {
-
-			gCtx.setGlobalData({...gCtx.globalData,popupData : project,  showPopup : true});
+		gCtx.setGlobalData({ popupData : project, showPopup : true });
 	}
 	return (
 		<React.Fragment>

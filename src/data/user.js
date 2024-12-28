@@ -25,9 +25,16 @@ const INFO = {
 			logo: "../projects/onew.png",
 			description: "An easy-to-use mobile app that gathers all Algerian news in one place, keeping you updated effortlessly.",
 			link: "https://github.com/TheOpenNews/ONews",
-			previewImgs: [],
-			feats: [],
-			previewImgs: [],
+			feats: [
+				"Fully customizable using extensions for web scraping to gather news from various websites.",
+				"Centralized platform to access all news in one place.",
+				"User-friendly and intuitive interface for seamless navigation.",
+			],
+			previewImgs: [
+				"../projects/ONews/1.jpg",
+				"../projects/ONews/3.jpg",
+				"../projects/ONews/4.jpg",
+			],
 			type: "mobile",
 		},
 		{
@@ -64,11 +71,10 @@ const INFO = {
 				"Islamic-themed user interface design.",
 			],
 			previewImgs: [
-				"https://github.com/t-88/i9ama-libmgr/raw/master/preview/usecase.gif",
-				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/1.png",
-				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/2.png",
-				"https://raw.githubusercontent.com/t-88/i9ama-libmgr/master/preview/3.png",
-
+				"../projects/LibTrack/user-case.mp4",
+				"../projects/LibTrack/1.png ",
+				"../projects/LibTrack/2.png ",
+				"../projects/LibTrack/3.png ",
 			],
 		},
 
@@ -91,7 +97,7 @@ const INFO = {
 			type: "mobile",
 		},
 
-	
+
 		{
 			title: "EpicEditor",
 			description: "An online game engine that transforms games into cross-platform desktop applications, serving as a foundation for future app development tools. ",
@@ -107,7 +113,7 @@ const INFO = {
 				"https://raw.githubusercontent.com/t-88/epic-editor/master/preview/epic-editor.png",
 				"https://raw.githubusercontent.com/t-88/epic-editor/master/preview/code-editor.png",
 			],
-			
+
 		},
 	],
 };

@@ -141,6 +141,16 @@
 	height: 48px;
 	border-radius: 4px;
 	overflow: hidden;
+	cursor: pointer;
+}
+
+.stack-item:hover {
+	animation: hoverAnim 200ms cubic-bezier(0.23, 1, 0.320, 1);
+	transform: translateY(-10px);
+}
+@keyframes hoverAnim {
+	from {transform: translateY(0);}
+	to {transform: translateY(-10px);}
 }
 
 .stack-item img {
