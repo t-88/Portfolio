@@ -9,6 +9,7 @@
 #root {
 	position: relative;
 }
+
 body {
 	margin: 0;
 	font-family: var(--primary-font);
@@ -17,7 +18,81 @@ body {
 	min-width: 500px;
 }
 
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
+}
+
+
+#root {
+	font-size: 16px;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+
+}
+
+
+@media (max-width: 768px) {
+	#root {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.4rem;
+
+	}
+}
+
+@media (max-width: 480px) {
+	#root {
+		font-size: 24px;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
 }

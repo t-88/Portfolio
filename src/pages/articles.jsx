@@ -7,7 +7,6 @@ import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
@@ -17,17 +16,11 @@ const Articles = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "articles");
 
 	return (
 		<React.Fragment>
 			<Helmet>
 				<title>{`Articles | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
 			</Helmet>
 
 			<div className="page-content">

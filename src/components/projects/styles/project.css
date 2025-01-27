@@ -1,10 +1,14 @@
 @import "../../../data/styles.css";
 
 .project {
-	mix-blend-mode: normal;
+	background: white;
+
 	border-radius: 20px;
-	opacity: 0.8;
 	height: 100%;
+
+	border: 1px solid #00000012;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 2%);
 }
 
 .project a {
@@ -27,7 +31,6 @@
 }
 
 .project-logo {
-	width: 30px;
 }
 
 .project-logo img {
@@ -67,6 +70,6 @@
 
 @media (max-width: 600px) {
 	.project {
-		height: 300px;
+		/* height: 300px; */
 	}
 }

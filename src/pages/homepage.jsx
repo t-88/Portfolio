@@ -19,7 +19,6 @@ import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
@@ -57,7 +56,6 @@ const Homepage = () => {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [logoSize, oldLogoSize]);
 
-	const currentSEO = SEO.find((item) => item.page === "home");
 
 	const logoStyle = {
 		display: "flex",
@@ -73,11 +71,6 @@ const Homepage = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{INFO.main.title}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
 			</Helmet>
 
 			<div className="page-content">
@@ -92,13 +85,13 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
+								<p className="title homepage-title">
 									{INFO.homepage.title}
-								</div>
+								</p>
 
-								<div className="subtitle homepage-subtitle">
+								<p className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
-								</div>
+								</p>
 							</div>
 
 							<div className="homepage-first-area-right-side">
