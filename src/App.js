@@ -23,6 +23,13 @@ function App() {
 		} else {
 			document.querySelector("html").classList.remove("overflow-hidden");
 		}
+
+		window.onload = function () {
+            if(window.innerWidth <= 500) {
+                var mvp = document.getElementById('myViewport');
+                // mvp.setAttribute('content','width=500');
+            }
+        }		
 	},[globalData.showPopup]);
 
 	return (
