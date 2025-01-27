@@ -50,8 +50,6 @@ export default function Popup() {
                 }
             </Carousel>
 
-            <div>
-            </div>
         </div>
     </section>
 
