@@ -10,12 +10,16 @@
 	position: relative;
 }
 
+html , body , #root {
+	min-width: 500px;
+
+}
+
 body {
 	margin: 0;
 	font-family: var(--primary-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	min-width: 500px;
 }
 
 
