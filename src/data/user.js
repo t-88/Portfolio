@@ -63,7 +63,7 @@ const INFO = {
 			description:
 				"A desktop app for managing library bookings and users, designed to simplify the process of tracking books and maintaining organization in my local library.",
 			logo: "../projects/LibTrack.png",
-			link: "https://github.com/t-88/epic-editor",
+			link: "https://github.com/t-88/i9ama-libmgr",
 			feats: [
 				"Library resource management.",
 				"Notification system for due dates and new arrivals.",
