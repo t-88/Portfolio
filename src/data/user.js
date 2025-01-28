@@ -41,7 +41,7 @@ const INFO = {
 			title: "GuiDNI",
 			description: "Winner of the Coscape Hackathon Event\nGuiDNI is a mobile app that connects the Algerian community with startups, offering rewards for feedback and participation through daily surveys.",
 			logo: "../projects/GuiDNI.png",
-			link: "https://github.com",
+			link: "https://github.com/t-88/coscape-hackthone",
 			previewImgs: [],
 			feats: [
 				"Startup-focused platform",
